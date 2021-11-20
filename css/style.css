@@ -1,0 +1,56 @@
+  /*  Universal Selector  */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*  Element Selector */
+h2 {
+    color: blue; 
+}
+ 
+p { 
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/*  Group Selector */
+h2, p {
+    font-size: 20px;
+}
+
+/* 
+ p.p1 {
+    color: red;
+}
+
+p#id1 {
+    background: #000;
+}
+ */
+
+ /*  Class Selector  */
+.p1 {
+    color: red;
+}
+
+.background1 {
+    background: #000;
+}
+
+/*.text-center {
+    text-align: center;
+}*/
+
+/* Id Selector */
+#whiteColor {
+    color: #fff;
+}
+
+/*div .test1 {
+    color: blue;
+}*/
+
+div > .test1 {
+    color: blue;
+}
