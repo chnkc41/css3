@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flex-wrap</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            color: green;
+            border: 2px solid green;
+            margin-bottom: 20px;
+        }
+
+        .flex-container > div {
+            background-color: #ededed;
+            width: 100px; 
+            line-height: 75px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px; 
+        }
+
+        .flex1 {
+             flex-wrap: wrap;
+        }
+
+        .flex2 {
+             flex-wrap: wrap-reverse;
+        } 
+
+        .flex3 {
+             flex-wrap: nowrap;
+        }  
+  
+    </style>
+</head>
+<body>  
+     <!-- flex-wrap  -->
+     <div class="flex-container flex1">
+         <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+     </div>
+
+     <div class="flex-container flex2">
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+    </div>
+
+    <div class="flex-container flex3">
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> align-items</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            color: green;
+            border: 2px solid green;
+            margin-bottom: 20px;
+            height: 400px;
+        }
+
+        .flex-container > div {
+            background-color: #ededed;
+            width: 100px; 
+            line-height: 75px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px; 
+        }
+
+        .flex1 {
+              align-items: stretch ; 
+        }
+
+        .flex2 {
+              align-items: flex-start; 
+              flex-wrap: wrap;
+        } 
+
+        .flex3 {
+            align-items: flex-end; 
+            flex-wrap: wrap;
+
+        }  
+        
+        .flex4 {
+            align-items: center;
+        }  
+
+        .flex5 {
+            align-items: baseline;
+        }  
+
+         /* baseline değerini anlamak için öğe değerlerini değiştirip bir çizgi çizelim  */ 
+        .flex5 div:nth-child(2){line-height: 50px;}
+        .flex5 div:last-child {line-height: 25px;}
+    </style>
+</head>
+<body>  
+     <!-- align-items  -->
+     <div class="flex-container flex1">
+         <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+     </div>
+
+     <div class="flex-container flex2">
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+    </div>
+
+    <div class="flex-container flex3">
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+    </div>
+
+    <div class="flex-container flex4">
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+         <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+    </div>
+
+    <div class="flex-container flex5">
+        <div>1</div> <div>2</div> <div>3</div>
+    </div>
+     
+</body>
+</html>

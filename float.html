@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Float </title> 
+
+    <style>   
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+  
+        header, footer {
+            background: #f1f2f3;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }   
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        } 
+
+        .container .row div { 
+            padding: 20px;
+            margin: 20px 0;
+            height: 200px;
+            float: left;
+        }
+    
+        .row:after { content: "";display: table;clear: both;}  
+
+        /*.clear {
+            content: "";display: table;clear: both;
+        }*/
+        
+        .col-100 {
+            width: 100%;
+            background: #777; 
+        }
+        
+        .col-50 {
+            width: 50%;
+        }
+        
+        .col-33 {
+            width: 33.3333%;
+        }
+        
+        .col-25 {
+            width: 25%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <!--   Float    -->    
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-100"></div> 
+        </div>
+
+        <div class="row">
+            <div class="col-50" style="background-color: #555;"></div> 
+            <div class="col-50" style="background-color: #999;"></div> 
+        </div>
+
+        <div class="row">
+            <div class="col-33" style="background-color: #555;"></div> 
+            <div class="col-33" style="background-color: #999;"></div>  
+            <div class="col-33" style="background-color: #f1f2f3;"></div>  
+
+        </div>
+
+        <!-- <div class="clear"></div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+ -->
+
+        <div class="row">
+            <div class="col-25" style="background-color: #555;"></div> 
+            <div class="col-25" style="background-color: #999;"></div>   
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div> 
+        
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+     
+</body>
+</html>

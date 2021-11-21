@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Display - inline - blok </title> 
+
+    <style>   
+        body {
+            margin-bottom: 500px;
+        }
+
+        nav {
+            margin-bottom: 50px;
+        }
+        
+        .nav1  a {
+            text-decoration: none; 
+            color: tomato; 
+            display: block; 
+        } 
+        
+        .nav2 a {
+            text-decoration: none; 
+            color: tomato; 
+            background: #000;
+
+            width: 150px;
+            display: inline-block;
+        } 
+
+        .nav3  a {
+            text-decoration: none; 
+            color: tomato; 
+        } 
+
+        span {
+            background: #000;
+            color: #fff;
+            width: 300px;
+            display: inline-block; /* inline - block */
+        }
+
+        .div1 {
+            background: #00f;
+            color: #fff;
+            display: inline;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!--  Display - inline - blok   -->    
+    <nav class="nav1">
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+
+    <nav class="nav2">
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+
+    <nav class="nav3">
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+
+    <span class="span1">Lorem ipsum dolor sit amet.</span>
+    <span class="span2">Lorem ipsum dolor sit amet.</span>
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+
+</body>
+</html>
