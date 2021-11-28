@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title> 
+
+    <style>   
+        body {
+            margin-bottom: 500px;
+            height: 2000px;
+        }
+
+        div {
+            border: 1px solid #000;
+            width: 400px;
+            height: 200px;
+        }
+
+        /* 
+            position: static - 
+        
+        */
+        
+        div.relative1 {
+            position: relative;
+            top: 100px;
+            left: 100px; 
+            background-color: green;
+        }
+ 
+
+        div.absolute {
+            position: absolute;
+            top: 0;
+            right: 0; 
+            background-color: hotpink;
+        }
+
+        .inner-position {
+            position: absolute;
+            background-color: #fff;
+            height: 100px;
+            width: 100px;
+            right: 0;
+            bottom: 0;
+            /* Katman kontrolü */
+            z-index: 1
+        } 
+        
+        .sticky {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 30px;
+            background-color: hotpink;
+        }
+
+        .fixed {
+            position: fixed;   
+            background-color: black;
+            bottom: 10px;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam veritatis doloremque ea, ipsam quo quasi! Adipisci in harum aperiam, dicta, veniam iure provident eum, veritatis aliquam dolorem magni numquam.</p>
+
+    <!--  Positions  -->    
+     <!-- background-color: hotpink; -->
+
+  <!--   <div class="absolute">
+        <p>absolute</p>
+     </div> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam veritatis doloremque ea, ipsam quo quasi! Adipisci in harum aperiam, dicta, veniam iure provident eum, veritatis aliquam dolorem magni numquam.</p>
+
+     <div class="relative1">
+        <div class="inner-position">
+            <p>Relative</p>
+        </div>
+     </div> -->
+
+    <div class="sticky">
+        <p>sticky</p>
+     </div> 
+
+    <div class="fixed">
+        <p>sticky</p>
+     </div> 
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            color: green;
+            border: 2px solid green;
+        }
+
+        .flex-container > div {
+            background-color: #ededed;
+            width: 100px; 
+            line-height: 75px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px; 
+        }
+
+        .box1 {
+           order: 2;
+        }
+
+        .box2 {
+           order: 1;
+        }
+
+        .box3 {
+           order: 0;
+        }
+
+
+    </style>
+</head>
+<body>  
+     <!-- Flex Container  -->
+     <div class="flex-container">
+         <div class="box1">1</div>
+         <div class="box2">2</div>
+         <div class="box3">3</div>
+     </div>
+
+</body>
+</html>

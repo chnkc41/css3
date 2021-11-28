@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        body {background-color: #ededed;}
+
+        .grid-container {
+            display: grid;
+            border: 3px solid #A0C4FF;
+            /* grid-template-rows: 100px 150px 300px;
+            grid-template-columns: 200px 400px 200px; 
+            grid-template:  100px 150px 300px / 200px 400px 200px;
+            grid-template:  100px 150px 300px / 200px auto 200px;
+            grid-template:  100px 150px 300px / 1fr  3fr 2fr;
+            grid-template:  repeat(3, 200px) / 1fr  3fr 2fr;*/
+            grid-template:  repeat(3, 150px) 100px / repeat(3, 1fr);
+
+            /* grid-row-gap: 15px;
+            grid-column-gap: 15px;   
+            grid-gap: 50px 15px;*/
+            grid-row: 15px;
+        }
+
+        .grid-container > div {
+            border: 1px solid #A0C4FF;
+            padding: 25px;
+            font-size: 30px;
+            /* text-align: center; */
+            /* Flex  
+            display: flex;
+            justify-content: center;
+            align-items: center;*/
+
+            /* grid */
+            display: grid;
+            place-items: center;
+        } 
+
+        .box1 {
+            background-color: #FFADAD; 
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: 1 / 4;
+
+        }
+        .box2 {
+            background-color: #FFD6A5;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row: 2 / 4;
+        }
+        .box3 {
+            background-color: #FDFFB6;
+            grid-column: 2 / 4;
+        }
+        .box4 {background-color: #CAFFBF;}
+        .box5 {background-color: #9BF6FF;}
+        .box6 {
+            background-color: #A0C4FF;
+            grid-column: 1 / 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+</body>
+</html>
